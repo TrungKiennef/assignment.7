@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+ 
+#define MAX_SIZE_ARR 100
+ 
+float get_element_nearest_x(float arr[], int sz, float x);
+ 
+int main()
+{
+    float arr[MAX_SIZE_ARR], x, res;
+    int n, i;
+    do
+    {
+        printf("n = ");
+        scanf("%d", &n);
+    }while(n <= 0);
+     
+    // Input array
+    for(i = 0; i < n; i++)
+    {
+        printf("\narr[%d] = ", i);
+        scanf("%f", &arr[i]);
+    }
+ 
+    // Input x
+    printf("x = ");
+    scanf("%f", &x);
+ 
+    res = get_element_nearest_x(arr, n, x);
+    printf("%f is nearest from %f", res, x);
+ 
+ 
+    getch();
+    return 0;
+}
