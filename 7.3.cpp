@@ -19,4 +19,5 @@ for(int i=0;i<n;i++)
 	printf("\nnhap a[%d]: ",i);
 	scanf("%f", &a[i]);
 }
+}
 	
